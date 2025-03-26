@@ -1,9 +1,14 @@
 
 package libreria;
-
+/**
+ * Clase Main del programa
+ * @author Miriam
+ */
 public class Main {
-  
-    public static void main(String[] args) {
+  /**
+   * Método main, método principal del programa
+  */
+    public static void main(String[] args) {       
         LibreriaSerranoGomezMiriam2425T4 miLibreriaSerranoGomezMiriam2425T4;
         String x;
         int stock;
@@ -26,7 +31,14 @@ public class Main {
             System.out.println("Fallo al obtener el saldo al ingresar");
         }
     }
-
+/**
+ * método privado para añadir un ingreso 
+ * @param miLibreriaSerranoGomezMiriam2425T4
+ * @param ingreso double importe a incrementar
+ * @param concepto string concepto del ingreso
+ * @throws Exception El método maneja excepciones de forma general
+ * @since LibreriaOnlineSerranoGomezMiriam2425T4 1.0
+ */
     private static void añadeIngresoSerranoGomezMiriam2425T4(
             LibreriaSerranoGomezMiriam2425T4 miLibreriaSerranoGomezMiriam2425T4, 
             double ingreso, String concepto) throws Exception {
@@ -35,7 +47,12 @@ public class Main {
         saldoActual = miLibreriaSerranoGomezMiriam2425T4.obtenerSaldo();
         System.out.println("Tu saldo actual después de ingresar es de "+saldoActual+"€");
     }
-
+/**
+ * Método privado para comprar el libro de Don Quijote
+ * @param miLibreriaSerranoGomezMiriam2425T4 LibreriaSerranoGomezMiriam2425T4 objeto 
+ * que contiene la información de la librería
+ * @since LibreriaOnlineSerranoGomezMiriam2425T4 1.0
+ */
     private static void compraQuijoteSerranoGomezMiriam2425T4(LibreriaSerranoGomezMiriam2425T4 miLibreriaSerranoGomezMiriam2425T4) {
         String x;
         int num;
@@ -56,7 +73,7 @@ public class Main {
             System.out.println("Error en la compra del libro");
         }
         saldoActual = miLibreriaSerranoGomezMiriam2425T4.obtenerSaldo();
-        System.out.println("E l saldo al comprar el libro es de "+ saldoActual );        
+        System.out.println("El saldo al comprar el libro es de "+ saldoActual );        
         x = miLibreriaSerranoGomezMiriam2425T4.obtenerNombre();
         stock = miLibreriaSerranoGomezMiriam2425T4.obtenerStock();
         System.out.println("El libro "+x+" tiene un stock de "+stock+" unidades ahora");
