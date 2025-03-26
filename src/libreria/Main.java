@@ -56,7 +56,7 @@ public class Main {
             System.out.println("Error en la compra del libro");
         }
         saldoActual = miLibreriaSerranoGomezMiriam2425T4.obtenerSaldo();
-        System.out.println("El saldo al comprar el libro es de "+ saldoActual );        
+        System.out.println("E l saldo al comprar el libro es de "+ saldoActual );        
         x = miLibreriaSerranoGomezMiriam2425T4.obtenerNombre();
         stock = miLibreriaSerranoGomezMiriam2425T4.obtenerStock();
         System.out.println("El libro "+x+" tiene un stock de "+stock+" unidades ahora");
